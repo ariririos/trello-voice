@@ -1,0 +1,107 @@
+html {
+  background-color: white;
+  font: 11pt 'Helvetica Neue', 'Helvetica', sans-serif; }
+
+.dragenter {
+  background-color: blue; }
+
+.drop {
+  background-color: green; }
+
+.card {
+  display: inline-block;
+  color: white;
+  background-color: #555;
+  padding: 1.25em;
+  border-radius: 0.6em;
+  box-shadow: 2px 2px 0px 1px #464646;
+  width: 10em;
+  margin: 0.3em; }
+  .card .badges {
+    margin-top: 0.75em; }
+    .card .badges .badge {
+      display: inline-block;
+      padding: 0.45em;
+      border-radius: 4px;
+      margin: 4px 4px 4px 4px;
+      background-color: #2c2c2c;
+      box-shadow: 1.5px 1.5px 0 0 #191919;
+      width: 3.5em;
+      text-align: center;
+      overflow: hidden; }
+      .card .badges .badge.dueDate:before {
+        content: '\231b';
+        padding-right: 4px; }
+      .card .badges .badge.dueDate.upcoming {
+        background-color: #f08b08;
+        box-shadow: 1.5px 1.5px 0 0 #a55d00; }
+      .card .badges .badge.dueDate.complete {
+        background-color: #299106;
+        box-shadow: 1.5px 1.5px 0 0 #1e6f02; }
+      .card .badges .badge.dueDate.passed {
+        background-color: #ba0101;
+        box-shadow: 1.5px 1.5px 0 0 #9e0202; }
+      .card .badges .badge.checklist:before {
+        content: '\2713';
+        padding-right: 4px; }
+      .card .badges .badge.checklist.incomplete {
+        background-color: #ba0101;
+        box-shadow: 1.5px 1.5px 0 0 #9e0202; }
+      .card .badges .badge.checklist.intermediate {
+        background-color: #f08b08;
+        box-shadow: 1.5px 1.5px 0 0 #a55d00; }
+      .card .badges .badge.checklist.complete {
+        background-color: #299106;
+        box-shadow: 1.5px 1.5px 0 0 #1e6f02; }
+  .card .labels {
+    margin-bottom: 0.75em; }
+    .card .labels .label {
+      width: 2em;
+      height: 0.5em;
+      display: inline-block;
+      border-radius: 8px;
+      margin-right: 6px; }
+  .card.newCard input[type='submit'] {
+    background: #26ad04;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    box-shadow: 1.5px 1.5px 0px 1px #038e03; }
+    .card.newCard input[type='submit']:focus {
+      outline: none;
+      border: none; }
+    .card.newCard input[type='submit']:hover {
+      background: #1d8301;
+      box-shadow: 1.5px 1.5px 0px 1px #026b02;
+      cursor: pointer; }
+    .card.newCard input[type='submit']:active {
+      background: #1a7301;
+      box-shadow: 1.5px 1.5px 0px 1px #016701;
+      cursor: pointer; }
+  .card.newCard textarea {
+    background: #7c7b7b;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 0.75em;
+    min-height: 4em;
+    color: white;
+    font: inherit;
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5em; }
+    .card.newCard textarea:focus {
+      border: none;
+      outline: none; }
+  .card.newCard.dateDisplay:before {
+    content: 'Date format: hh:mm a MM-DD-YY'; }
+
+#possibleLabelDisplay {
+  display: inline-block;
+  background: gray;
+  border-radius: 4px; }
+  #possibleLabelDisplay .possibleLabel {
+    color: white;
+    margin: 0.25em;
+    padding: 0.5em; }

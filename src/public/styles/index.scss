@@ -1,0 +1,147 @@
+html {
+    background-color: white;
+    font: 11pt 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.dragenter {
+    background-color: blue;
+}
+
+.drop {
+    background-color: green;
+}
+
+.card {
+    display: inline-block;
+    color: white;
+    background-color: #555;
+    padding: 1.25em;
+    border-radius: 0.6em;
+    // // material design
+    // box-shadow: 0 3px 6px 0px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 2px 2px 0px 1px #464646;
+    width: 10em;
+    margin: 0.3em;
+    $section-margin: 0.75em;
+    .badges {
+        margin-top: $section-margin;
+        .badge {
+            display: inline-block;
+            padding: 0.45em;
+            border-radius: 4px;
+            margin: 4px 4px 4px 4px;
+            background-color: #2c2c2c;
+            box-shadow: 1.5px 1.5px 0 0 #191919;
+            width: 3.5em;
+            text-align: center;
+            overflow: hidden;
+            &.dueDate {
+                &:before {
+                    content: '\231b';
+                    padding-right: 4px;
+                }
+                &.upcoming {
+                    background-color: #f08b08;
+                    box-shadow: 1.5px 1.5px 0 0 #a55d00;
+                }
+                &.complete {
+                    background-color: #299106;
+                    box-shadow: 1.5px 1.5px 0 0 #1e6f02;
+                }
+                &.passed {
+                    background-color: #ba0101;
+                    box-shadow: 1.5px 1.5px 0 0 #9e0202;
+                }
+                
+            }
+            &.checklist {
+                &:before {
+                    content: '\2713';
+                    padding-right: 4px; 
+                }
+                &.incomplete {
+                    background-color: #ba0101;
+                    box-shadow: 1.5px 1.5px 0 0 #9e0202;
+                }
+                &.intermediate {
+                    background-color: #f08b08;
+                    box-shadow: 1.5px 1.5px 0 0 #a55d00;
+                }
+                &.complete {
+                    background-color: #299106;
+                    box-shadow: 1.5px 1.5px 0 0 #1e6f02;
+                }
+            }
+        }
+
+    }
+    .labels {
+      margin-bottom: $section-margin;
+      // DEMO
+      .label {
+        width: 2em;
+        height: 0.5em;
+        display: inline-block;
+        // background: #27d2be;
+        border-radius: 8px;
+        margin-right: 6px;
+      }
+    }
+    &.newCard {
+        // block style buttons
+        // TODO: try material style buttons
+        input[type='submit'] {
+            background: #26ad04;
+            border: none;
+            color: white;
+            padding: 0.5em;
+            border-radius: 4px;
+            box-shadow: 1.5px 1.5px 0px 1px #038e03;
+            &:focus {
+                outline: none;
+                border: none;
+            }
+            &:hover {
+                background: #1d8301;
+                box-shadow: 1.5px 1.5px 0px 1px #026b02;
+                cursor: pointer;
+            }
+            &:active {
+                background: #1a7301;
+                box-shadow: 1.5px 1.5px 0px 1px #016701;
+                cursor: pointer;
+            }
+        }
+        textarea {
+            background: rgb(124, 123, 123);
+            border: none;
+            border-radius: 4px;
+            margin-bottom: $section-margin;
+            min-height: 4em;
+            color: white;
+            font: inherit;  
+            resize: none;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0.5em;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+        &.dateDisplay:before {
+            content: 'Date format: hh:mm a MM-DD-YY'
+        }
+    }
+}
+
+#possibleLabelDisplay {
+    display: inline-block;
+    background: gray;
+    border-radius: 4px;
+    .possibleLabel {
+        color: white;
+        margin: 0.25em;
+        padding: 0.5em;
+    }
+}

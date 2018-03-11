@@ -1,0 +1,1 @@
+{"version":3,"sources":["models/card.js"],"names":["Card"],"mappings":";;;;;;;;IAAqBA,I;;;;kBAAAA,I","file":"card.js","sourcesContent":["export default class Card {}\n"]}

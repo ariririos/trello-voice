@@ -1,0 +1,43 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title trello-voice
+        link(rel='stylesheet', href='styles/index.css')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js')
+        script(src='https://unpkg.com/react@15/dist/react.js')
+        script(src='https://unpkg.com/react-dom@15/dist/react-dom.js')
+        script(src='https://unpkg.com/prop-types@15.6/prop-types.js')
+        script(type='module' src='scripts/index.js')
+        
+    body
+        #root
+
+        p(draggable='true' id='draggable') Test content
+        div(style="margin: 1em; padding: 1em;" id='dropzone') Drop zone
+
+        div.card
+            div.labels
+                span.label(style='background-color: white')
+                span.label(style='background-color: red')
+            div.text Text content
+            div.badges
+                span.badge.dueDate.passed Jan 1
+                span.badge.dueDate.upcoming Jan 1
+                span.badge.dueDate.complete Jan 1
+                span.badge.checklist.intermediate 7/15
+                span.badge.checklist.complete 7/15
+                span.badge.checklist.incomplete 7/15             
+                             
+
+        div#cardlist
+
+        div.card.newCard#newCardGen
+            div.labels    
+            textarea
+            div.badges               
+            input(type='submit' value='+ new card')
+        
+        div#possibleLabelDisplay
+
+        div#possibleDateDisplay        

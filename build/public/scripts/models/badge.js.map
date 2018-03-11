@@ -1,0 +1,1 @@
+{"version":3,"sources":["models/badge.js"],"names":["Badge"],"mappings":";;;;;;;;IAAqBA,K;;;;kBAAAA,K","file":"badge.js","sourcesContent":["export default class Badge {}\n"]}

@@ -1,0 +1,10 @@
+- instead of having names on labels, have an association b/w a label name and label color stored
+- left to do (basically):
+    - make a List component
+    - the draggable stuff
+    - figure out how adding labels/badges/cards/lists will work
+    - figure out how adding labels will work
+    - prettify a ton of stuff
+    - try material design alts on everything
+    - try to make the rest of the interface look less disgusting
+    - new stuff: a difficulty badge, an importance badge, sorting by: name, due date, completed/not, difficulty, importance, amount completed (checklist), being able to remove labels and badges from the card UI (not the popup)

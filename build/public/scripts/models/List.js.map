@@ -1,0 +1,1 @@
+{"version":3,"sources":["models/List.js"],"names":["List"],"mappings":";;IAAqBA,I;;;;eAAAA,I","file":"List.js","sourcesContent":["export default class List {}\n"]}
